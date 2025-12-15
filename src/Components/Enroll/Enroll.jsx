@@ -2,19 +2,23 @@ import React from "react";
 
 const Enroll = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
-      {/* Header Section */}
-      <div className="bg-gradient-to-r  py-10 px-4 text-center text-black shadow-lg">
-        <h1 className="text-4xl font-bold">Enroll at Navgurukul</h1>
-        <p className="mt-2 text-lg opacity-90">
-          Begin your transformative journey through education, empowerment, and community.
+    <div className="bg-gray-50 min-h-screen pt-24">
+      <div className="bg-white py-12 px-4 text-center text-black shadow-md">
+        <h1 className="text-4xl font-bold leading-tight md:text-5xl">
+          Enroll at NavGurukul
+        </h1>
+
+        <p className="mt-4 text-lg leading-relaxed opacity-90 max-w-3xl mx-auto">
+          Begin your transformative journey through education, empowerment,
+          and community.
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 py-10 space-y-10">
+      <div className="max-w-5xl mx-auto px-4 py-12 space-y-10">
+        
         {/* Eligibility Requirements */}
         <section className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-          <h2 className="text-2xl font-semibold mb-4 text-amber-600">
+          <h2 className="text-2xl font-semibold mb-4 text-orange-500">
             Eligibility Requirements
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -26,87 +30,76 @@ const Enroll = () => {
 
         {/* Programs Offered */}
         <section>
-          <h2 className="text-2xl font-semibold mb-6 text-amber-600">
+          <h2 className="text-2xl font-semibold mb-6 text-orange-500">
             Programs Offered
           </h2>
 
           <div className="grid gap-6 md:grid-cols-2">
+            
             {/* SOP */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition">
               <h3 className="text-xl font-semibold text-orange-500">
                 SOP (School of Programming)
               </h3>
-              <p className="text-sm text-gray-500">Duration: 15-18 months</p>
+              <p className="text-sm text-gray-500">Duration: 15–18 months</p>
               <p className="mt-2 text-gray-700">
-                A comprehensive programming course that helps students build modern websites and apps.
-                It focuses on web development, app development, and career-ready technical skills.
+                A comprehensive programming course focused on building modern
+                websites and applications.
               </p>
               <p className="mt-2 text-gray-700">
-                <strong>Course:</strong> HTML, CSS, JavaScript, Git, Node.js, React.js, DSA, and soft skills.
-              </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Assessments:</strong> Weekly projects, peer reviews, and final capstone evaluations.
+                <strong>Course:</strong> HTML, CSS, JavaScript, Git, Node.js,
+                React.js, DSA
               </p>
             </div>
 
             {/* SOB */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition">
               <h3 className="text-xl font-semibold text-orange-500">
                 SOB (School of Business)
               </h3>
               <p className="text-sm text-gray-500">Duration: 12 months</p>
               <p className="mt-2 text-gray-700">
-                Prepares students for real-world roles in startups and business environments. Builds
-                entrepreneurial thinking and practical business knowledge.
-              </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Focus Areas:</strong> Communication, business skills, sales strategies, marketing fundamentals.
-              </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Skill Requirements:</strong> Strong interpersonal skills, teamwork, and interest in business.
+                Builds real-world business, communication, and entrepreneurial
+                skills.
               </p>
             </div>
 
             {/* SOD */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 md:col-span-2">
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition md:col-span-2">
               <h3 className="text-xl font-semibold text-orange-500">
                 SOD (School of Data Analytics)
               </h3>
-              <p className="text-sm text-gray-500">Duration: 12-15 months</p>
+              <p className="text-sm text-gray-500">Duration: 12–15 months</p>
               <p className="mt-2 text-gray-700">
-                Trains students to analyze data, build insights, and make data-driven decisions.
-                Combines statistics, programming, and business acumen.
-              </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Modules:</strong> Excel, SQL, Python, statistics, data visualization (Tableau/Power BI), problem-solving.
-              </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Tools:</strong> Google Sheets, Jupyter, Python Libraries, open-source data platforms.
+                Learn data analysis, visualization, and data-driven
+                decision-making.
               </p>
             </div>
+
           </div>
         </section>
 
         {/* Enrollment Steps */}
         <section className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-          <h2 className="text-2xl font-semibold mb-4 text-amber-600">
+          <h2 className="text-2xl font-semibold mb-4 text-orange-500">
             Enrollment Steps
           </h2>
           <ol className="list-decimal list-inside space-y-2 text-gray-700">
             <li>
-              Visit the official application page:{" "}
+              Visit{" "}
               <a
                 href="https://admissions.navgurukul.org/"
-                className="text-orange-500 underline hover:text-orange-700"
+                className="text-orange-500 underline"
               >
-                https://admissions.navgurukul.org/
+                admissions.navgurukul.org
               </a>
             </li>
-            <li>Fill out the application with personal and educational details</li>
-            <li>Complete an aptitude test for the selected program</li>
-            <li>Attend an interview if shortlisted</li>
+            <li>Fill out the application form</li>
+            <li>Complete the aptitude test</li>
+            <li>Attend the interview if shortlisted</li>
           </ol>
         </section>
+
       </div>
     </div>
   );
